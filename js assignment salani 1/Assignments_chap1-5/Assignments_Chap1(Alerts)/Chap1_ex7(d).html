@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Script in body after html</title>
+
+    <style>
+        table {
+            background-color: rgb(206, 204, 203);
+        }
+
+        .head {
+            color: white;
+            background-color: rgb(148, 190, 63);
+            font-size: 200%;
+        }
+
+        .color {
+            color: white;
+            background-color: rgb(148, 190, 63);
+        }
+
+        .bg_white {
+            background-color: white;
+        }
+
+        textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2" class="head">
+                User Registration Form
+            <td>
+        </tr>
+        <form action="http://www.example.com/subscribe.php" method="post">
+
+            <tr>
+                <td>
+                    <label for="username">Username:</label>
+                </td>
+                <td>
+                    <input type="text" name="username" required="required" size="16" maxlength="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password:</label>
+                </td>
+                <td>
+                    <input type="password" name="password" required="required" size="16" maxlength="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date of birth"> Date of Birth:</label>
+                </td>
+                <td>
+                    <input type="date" name="date of birth" size="16" maxlength="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="web url">Web URL:</label>
+                </td>
+                <td>
+                    <input type="url" name="web url" size="16" maxlength="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address:</label>
+                </td>
+                <td>
+                    <input type="text" name="address" size="16" maxlength="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city">City:</label>
+                </td>
+                <td>
+                    <select name="city">
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Karachi" selected="selected">Karachi</option>
+                        <option value="Lahore">Lahore</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="state">State:</label>
+                </td>
+                <td>
+                    <input type="text" name="state" size="7" maxlength="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="zip">Zip:</label>
+                </td>
+                <td>
+                    <input type="text" name="zip" required="required" size="7" maxlength="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="magazine">Magazine:</label>
+                </td>
+                <td>
+                    <select name="magazines" size="4" multiple="multiple">
+                        <option value="newsweek">Newsweek</option>
+                        <option value="time">Time</option>
+                        <option value="fortune">Fortune</option>
+                        <option value="tv guide">TV Guide</option>
+                        <option value="others">Others</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Additional Comments:
+                        <textarea name="comments" cols="40" rows="6"></textarea> </label>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <label for="profile picture">Upload your profile picture: </label>
+                </td>
+                <td class="bg_white">
+                    <input type="file" name="Choose File">
+                </td>
+            <tr>
+                <td>
+                    <input type="submit" value="Upload" class="color">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Send Your Order" class="color">
+                </td>
+            </tr>
+        </form>
+    </table>
+
+    <script>
+        alert("Hello! Welcome to this site.")
+        alert("Please fill the Registration Form.")
+    </script>
+</body>
+
+</html>
